@@ -26,25 +26,28 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Javascript -->
     <script src="src/main.js" defer></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div>
-        <img src="images/logo.png" alt="logo" />
-        <h1><a href="#">Blackpink</a></h1>
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/logo.png" alt="logo" />
       </div>
       <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blackpink">Blackpink</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#album">Album</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#notice">Notice</a></li>
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#blackpink">Blackpink</a></li>
+          <li><a class="header__menu__item" href="#profile">Profile</a></li>
+          <li><a class="header__menu__item" href="#album">Album</a></li>
+          <li><a class="header__menu__item" href="#gallery">Gallery</a></li>
+          <li><a class="header__menu__item" href="#notice">Notice</a></li>
         </ul>
       </nav>
     </header>
