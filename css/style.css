@@ -317,3 +317,13 @@ input[name="tab_item"] {
   background-size: cover;
   background-position: -291px;
 }
+
+/* Banner */
+#banner {
+  margin: 7rem 0;
+}
+
+#banner img {
+  width: 100%;
+  margin: 0 auto;
+}
