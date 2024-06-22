@@ -29,6 +29,7 @@ a {
 
 button {
   position: relative;
+  margin: 1rem 0 3rem 0;
   padding: 0;
   outline: 0;
   border: 0;
@@ -183,7 +184,7 @@ button:hover:after {
 }
 
 /* home */
-#home video {
+.home__video {
   width: 100%;
   object-fit: fill;
 }
@@ -213,10 +214,6 @@ button:hover:after {
   background-image: url(../images/blackpink.jpg);
 }
 
-.blackpink__button {
-  margin: 1rem 0 3rem 0;
-}
-
 .blackpink__sns {
   display: flex;
   gap: 10px;
@@ -224,4 +221,99 @@ button:hover:after {
 
 .blackpink__sns__icon {
   font-size: 1.7rem;
+}
+
+/* Profile */
+.tab_item {
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.tab_item:hover {
+  background-color: var(--color-primary-varient);
+  color: var(--color-text);
+  transition: 0.5s;
+}
+
+input[name="tab_item"] {
+  display: none;
+}
+
+.tab_content {
+  display: none;
+  clear: both;
+  overflow: hidden;
+}
+
+#jisoo:checked ~ #jisoo_content,
+#jennie:checked ~ #jennie_content,
+#rose:checked ~ #rose_content,
+#risa:checked ~ #risa_content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#profile input:checked + .tab_item {
+  background-color: var(--color-primary-varient);
+  color: var(--color-text);
+}
+
+.profile__description {
+  margin-top: 15rem;
+}
+
+.profile__sns {
+  display: flex;
+  margin: 1rem 0 2rem 0;
+  align-items: self-start;
+  gap: 15px;
+}
+
+.profile__title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.profile__sns__icon {
+  font-size: 1.7rem;
+}
+
+.profile__img {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  background-color: var(--color-primary);
+}
+
+.profile__img::after {
+  content: "";
+  position: absolute;
+  top: 1.3rem;
+  right: 1.5rem;
+  width: 450px;
+  height: 600px;
+}
+.profile__img.jisooimg::after {
+  background-image: url(../images/jisoo.jpg);
+  background-size: cover;
+  background-position: -273px;
+}
+.profile__img.jennieimg::after {
+  background-image: url(../images/jennie.jpg);
+  background-size: cover;
+  background-position: -305px;
+}
+.profile__img.roseimg::after {
+  background-image: url(../images/rose.jpg);
+  background-size: cover;
+  background-position: -305px;
+}
+.profile__img.risaimg::after {
+  background-image: url(../images/risa.jpg);
+  background-size: cover;
+  background-position: -291px;
 }

@@ -55,7 +55,7 @@
     <main>
       <!-- Home -->
       <section id="Home">
-        <video muted autoplay loop="infinite">
+        <video muted autoplay loop="infinite" class="home__video">
           <source src="images/homevideo.mp4" type="video/mp4" />
         </video>
       </section>
@@ -129,84 +129,121 @@
         <input id="risa" type="radio" name="tab_item" />
         <label class="tab_item" for="risa">리사</label>
 
-        <ul>
-          <li>
-            <img src="/images/jisoo.jpg" alt="지수 프로필 이미지" />
-            <div>
-              <div>
-                <h2><span>1997년 2월 11일</span>Rose</h2>
-                <a
-                  href="https://instagram.com/sooyaaa__?igshid=YmMyMTA2M2Y="
-                  title="지수 인스타그램"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p><span>광고</span> 넥슨코리아 메이플스토리</p>
-              <p><span>홍보대사</span> 2022.05~ 까르띠에 글로벌 앰버서더</p>
-              <p><span>화보</span> 5월호 VOGUE Hong Kong 디올 패션 화보</p>
-              <button>More</button>
-            </div>
-          </li>
-          <li>
-            <img src="/images/jennie.jpg" alt="제니 프로필 이미지" />
-            <div>
-              <div>
-                <h2><span>1996년 1월 16일</span>JENNIE</h2>
-                <a
-                  href="https://instagram.com/jennierubyjane?igshid=YmMyMTA2M2Y="
-                  title="제니 인스타그램"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p><span>광고</span> 아모레퍼시픽 HERA</p>
-              <p><span>홍보대사</span> 2021.09~ Calvin Klein 글로벌 앰버서더</p>
-              <p><span>화보</span> 5월호 ELLE Japan '샤넬 코코 크러쉬' 화보</p>
-              <button>More</button>
-            </div>
-          </li>
-          <li>
-            <img src="/images/rose.jpg" alt="로제 프로필 이미지" />
-            <div>
-              <div>
-                <h2><span>1997년 2월 11일</span>ROSE</h2>
-                <a
-                  href="https://instagram.com/roses_are_rosie?igshid=YmMyMTA2M2Y="
-                  title="로제 인스타그램"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p>
-                <span>광고</span> LVMH그룹 티파니앤코 두번째 하드웨어 캠페인
-              </p>
-              <p><span>홍보대사</span> 2020.02~ 생로랑 글로벌 앰버서더</p>
-              <p>
-                <span>화보</span> 3월호 DAZED Korea 'SAINT LAURENT' 패션 화보
-              </p>
-              <button>More</button>
-            </div>
-          </li>
-          <li>
-            <img src="/images/risa.jpg" alt="리사 프로필 이미지" />
-            <div>
-              <div>
-                <h2><span>1997년 3월 27일</span>LISA</h2>
-                <a
-                  href="https://instagram.com/lalalalisa_m?igshid=YmMyMTA2M2Y="
-                  title="리사 인스타그램"
-                >
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <p><span>광고</span> M.A.C MAC Cosmetics</p>
-              <p><span>홍보대사</span> 2020.12~ BVLGARI 글로벌 앰버서더</p>
-              <p><span>화보</span> 5월호 ELLE Korea 'CELINE' 패션 화보</p>
-              <button>More</button>
-            </div>
-          </li>
-        </ul>
+        <div class="tab_content" id="jisoo_content">
+          <ul class="profile__description">
+            <li class="subtitle">1995년 1월 3일</li>
+            <li class="profile__sns">
+              <p class="profile__title">Jisoo</p>
+              <a
+                class="profile__sns__icon"
+                href="https://instagram.com/sooyaaa__?igshid=YmMyMTA2M2Y="
+                title="지수 인스타그램"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="text">
+              <span class="text__title">광고</span> 넥슨코리아 메이플스토리
+            </li>
+            <li class="text">
+              <span class="text__title">홍보대사</span> 2022.05~ 까르띠에 글로벌
+              앰버서더
+            </li>
+            <li class="text">
+              <span class="text__title">화보</span> 5월호 VOGUE Hong Kong 디올
+              패션 화보
+            </li>
+            <li><button>More</button></li>
+          </ul>
+          <div class="profile__img jisooimg"></div>
+        </div>
+
+        <div class="tab_content" id="jennie_content">
+          <ul class="profile__description">
+            <li class="subtitle">1996년 1월 16일</li>
+            <li class="profile__sns">
+              <p class="profile__title">JENNIE</p>
+              <a
+                class="profile__sns__icon"
+                href="https://instagram.com/jennierubyjane?igshid=YmMyMTA2M2Y="
+                title="제니 인스타그램"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="text">
+              <span class="text__title">광고</span> 아모레퍼시픽 HERA
+            </li>
+            <li class="text">
+              <span class="text__title">홍보대사</span> 2021.09~ Calvin Klein
+              글로벌 앰버서더
+            </li>
+            <li class="text">
+              <span class="text__title">화보</span> 5월호 ELLE Japan '샤넬 코코
+              크러쉬' 화보
+            </li>
+            <li><button>More</button></li>
+          </ul>
+          <div class="profile__img jennieimg"></div>
+        </div>
+        <div class="tab_content" id="rose_content">
+          <ul class="profile__description">
+            <li class="subtitle">1997년 2월 11일</li>
+            <li class="profile__sns">
+              <p class="profile__title">ROSE</p>
+              <a
+                class="profile__sns__icon"
+                href="https://instagram.com/roses_are_rosie?igshid=YmMyMTA2M2Y="
+                title="로제 인스타그램"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="text">
+              <span class="text__title">광고</span> LVMH그룹 티파니앤코 두번째
+              하드웨어 캠페인
+            </li>
+            <li class="text">
+              <span class="text__title">홍보대사</span> 2020.02~ 생로랑 글로벌
+              앰버서더
+            </li>
+            <li class="text">
+              <span class="text__title">화보</span> 3월호 DAZED Korea 'SAINT
+              LAURENT' 패션 화보
+            </li>
+            <li><button>More</button></li>
+          </ul>
+          <div class="profile__img roseimg"></div>
+        </div>
+        
+        <div class="tab_content" id="risa_content">
+          <ul class="profile__description">
+            <li class="subtitle">1997년 3월 27일</li>
+            <li class="profile__sns">
+              <p class="profile__title">LISA</p>
+              <a
+                class="profile__sns__icon"
+                href="https://instagram.com/lalalalisa_m?igshid=YmMyMTA2M2Y="
+                title="리사 인스타그램"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="text">
+              <span class="text__title">광고</span> M.A.C MAC Cosmetics
+            </li>
+            <li class="text">
+              <span class="text__title">홍보대사</span> 2020.12~ BVLGARI 글로벌
+              앰버서더
+            </li>
+            <li class="text">
+              <span class="text__title">화보</span> 5월호 ELLE Korea 'CELINE'
+              패션 화보
+            </li>
+            <li><button>More</button></li>
+          </ul>
+          <div class="profile__img risaimg"></div>
+        </div>
       </section>
       <!-- Banner -->
       <section id="banner">
