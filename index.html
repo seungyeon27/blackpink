@@ -59,22 +59,29 @@
           <source src="images/homevideo.mp4" type="video/mp4" />
         </video>
       </section>
-      <!-- Blackpink -->
-      <section id="blackpink">
-        <img src="images/blackpink.jpg" alt="블랙핑크 소개 이미지" />
-        <ul>
-          <li><span>2016.8.8.DEBUT</span>BLΛƆKPIИK</li>
-          <li><span>멤버</span> 지수, 제니, 로제, 리사</li>
-          <li><span>데뷔</span> 2016년 디지털 싱글 앨범 [SQUARE ONE]</li>
-          <li>
-            <span>수상</span>
+      <!-- Blackpink Intro -->
+      <section id="blackpink" class="section">
+        <div class="blackpink__img"></div>
+        <ul class="blackpink__content">
+          <li class="subtitle">2016.8.8.DEBUT</li>
+          <li class="title">BLACKPINK</li>
+          <li class="text">
+            <span class="text__title">멤버</span> 지수, 제니, 로제, 리사
+          </li>
+          <li class="text">
+            <span class="text__title">데뷔</span> 2016년 디지털 싱글 앨범
+            [SQUARE ONE]
+          </li>
+          <li class="text">
+            <span class="text__title">수상</span>
             2021년 아시아 아티스트 어워즈 가수부문 U+아이돌Live 인기상<br />
             2021년 골드하우스 영향력 있는 아시아인 100인 · · ·
           </li>
-          <button>More</button>
-          <ul>
+          <button class="blackpink__button">More</button>
+          <ul class="blackpink__sns">
             <li>
               <a
+                class="blackpink__sns__icon"
                 href="https://www.instagram.com/BLACKPINKOFFICIAL/"
                 title="블랙핑크 인스타그램 주소"
               >
@@ -83,6 +90,7 @@
             </li>
             <li>
               <a
+                class="blackpink__sns__icon"
                 href="https://www.facebook.com/BLACKPINKOFFICIAL/?locale=ko_KR"
                 title="블랙핑크 페이스북 주소"
               >
@@ -90,12 +98,17 @@
               </a>
             </li>
             <li>
-              <a href="https://x.com/BLACKPINK" title="블랙핑크 x 주소">
+              <a
+                class="blackpink__sns__icon"
+                href="https://x.com/BLACKPINK"
+                title="블랙핑크 x 주소"
+              >
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
             </li>
             <li>
               <a
+                class="blackpink__sns__icon"
                 href="https://www.youtube.com/BLACKPINKOFFICIAL"
                 title="블랙핑크 유튜브 주소"
               >
@@ -106,7 +119,7 @@
         </ul>
       </section>
       <!-- Profile -->
-      <section id="profile">
+      <section id="profile" class="section">
         <input id="jisoo" type="radio" name="tab_item" checked />
         <label class="tab_item" for="jisoo">지수</label>
         <input id="jennie" type="radio" name="tab_item" />
@@ -200,7 +213,7 @@
         <img src="/images/banner_lisa.png" alt="리사 솔로앨범 광고 배너" />
       </section>
       <!-- Album -->
-      <section id="album">
+      <section id="album" class="section">
         <h2>Album</h2>
         <ul>
           <li>
@@ -237,7 +250,7 @@
         <button>더보기</button>
       </section>
       <!-- Gallery -->
-      <section id="gallery">
+      <section id="gallery" class="section">
         <h2>Gallery</h2>
         <ul>
           <li><img src="/images/pink01.jpg" alt="로제 이미지" /></li>
@@ -333,7 +346,7 @@
       </aside>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="section">
       <img src="/images/yg.png" alt="yg logo" />
       <address>
         <p>주소 : 서울 마포구 희우정로1길 3</p>
