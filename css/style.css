@@ -529,3 +529,52 @@ input[name="tab_item"] {
   transition: opacity 300ms ease-in;
   z-index: 1;
 }
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: var(--color-primary-varient);
+  color: var(--color-text);
+}
+
+.footer__left {
+  display: flex;
+}
+
+.footer__left address {
+  margin-top: 0.3rem;
+}
+
+.footer__logo {
+  width: 150px;
+}
+
+.footer__right {
+  text-align: right;
+}
+
+.footer__right label {
+  display: none;
+}
+
+.footer__right select {
+  border-radius: 5px;
+  padding: 0.5rem 3rem;
+  margin-bottom: 1rem;
+}
+
+.footer__info {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__info li:hover {
+  border-bottom: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.footer__info__item {
+  color: var(--color-text);
+}
