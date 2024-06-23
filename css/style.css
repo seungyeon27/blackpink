@@ -104,7 +104,7 @@ button:hover::after {
 
 /* Common */
 .section {
-  padding: 7rem 4rem 7rem 4rem;
+  padding: 7rem 4rem 2rem 4rem;
 }
 
 .subtitle {
@@ -324,7 +324,7 @@ input[name="tab_item"] {
 
 /* Banner */
 #banner {
-  margin: 7rem 0;
+  margin: 7rem 0 2rem 0;
 }
 
 #banner img {
@@ -407,5 +407,108 @@ input[name="tab_item"] {
 }
 
 .gallery__btn:hover::after {
+  display: none;
+}
+
+/* Notice */
+#notice {
+  display: flex;
+  text-align: center;
+}
+
+.notice__title {
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.community {
+  margin-right: 4rem;
+}
+
+.community__content__item {
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  background-color: var(--color-primary-varient);
+}
+
+.community__content__text {
+  color: var(--color-text);
+  padding: 1rem;
+  background-color: var(--color-accent);
+  border-radius: 5px;
+}
+
+.community__comment {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.community__nickname {
+  text-align: right;
+}
+
+.notice__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.notice__content__item {
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  width: 46%;
+  background-color: var(--color-primary-varient);
+}
+
+.fa-bullhorn {
+  padding: 1.3rem 0;
+  font-size: 2rem;
+  color: var(--color-text);
+}
+
+.notice__content__text {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+}
+
+.notice__text__title {
+  text-align: left;
+  font-size: 1.2rem;
+  color: var(--color-text);
+}
+
+.notice__text {
+  text-align: left;
+  line-height: 1.7rem;
+  color: var(--color-text);
+}
+
+.notice__btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+.notice__btn.ver1 {
+  border: 1px solid var(--color-primary);
+}
+.notice__btn.ver2 {
+  border: 1px solid var(--color-accent);
+}
+
+.notice__btn:hover {
+  color: var(--color-white);
+  transition: 0.5s;
+}
+.notice__btn.ver1:hover {
+  background-color: var(--color-primary);
+}
+.notice__btn.ver2:hover {
+  background-color: var(--color-accent);
+}
+
+.notice__btn:hover::after {
   display: none;
 }
