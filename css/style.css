@@ -512,3 +512,20 @@ input[name="tab_item"] {
 .notice__btn:hover::after {
   display: none;
 }
+
+/* Arrow up */
+.arrow-up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 5px 5px 0px 0px var(--color-primary-varient);
+  transition: opacity 300ms ease-in;
+  z-index: 1;
+}
