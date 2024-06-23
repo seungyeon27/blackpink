@@ -336,9 +336,6 @@ input[name="tab_item"] {
 #album {
   text-align: center;
 }
-.album__title {
-  text-align: center;
-}
 
 .album__content {
   display: flex;
@@ -379,5 +376,36 @@ input[name="tab_item"] {
 }
 
 .album__btn:hover::after {
+  display: none;
+}
+
+/* Gallery */
+#gallery {
+  text-align: center;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.gallery__grid__img {
+  width: 100%;
+}
+
+.gallery__btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-primary);
+}
+
+.gallery__btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition: 0.5s;
+}
+
+.gallery__btn:hover::after {
   display: none;
 }
