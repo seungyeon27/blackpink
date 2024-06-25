@@ -198,13 +198,12 @@ button:hover::after {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: auto;
 }
 
 .blackpink__img {
   position: relative;
-  width: 600px;
-  height: 400px;
+  width: 60%;
+  height: 29rem;
   background-color: var(--color-accent);
 }
 
@@ -213,9 +212,16 @@ button:hover::after {
   position: absolute;
   top: 1.3rem;
   right: 1.5rem;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-image: url(../images/blackpink.jpg);
+}
+
+.blackpink__content {
+  margin: 0;
+  width: 30%;
 }
 
 .blackpink__sns {
@@ -258,6 +264,7 @@ input[name="tab_item"] {
 #risa:checked ~ #risa_content {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 #profile input:checked + .tab_item {
@@ -266,6 +273,7 @@ input[name="tab_item"] {
 }
 
 .profile__description {
+  width: 40%;
   margin-top: 15rem;
 }
 
@@ -288,9 +296,12 @@ input[name="tab_item"] {
 
 .profile__img {
   position: relative;
-  width: 450px;
-  height: 600px;
+  right: -1.6rem;
+  width: 47%;
+  height: 36rem;
   background-color: var(--color-primary);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .profile__img::after {
@@ -298,8 +309,8 @@ input[name="tab_item"] {
   position: absolute;
   top: 1.3rem;
   right: 1.5rem;
-  width: 450px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
 }
 .profile__img.jisooimg::after {
   background-image: url(../images/jisoo.jpg);
@@ -454,10 +465,11 @@ input[name="tab_item"] {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  gap: 1rem;
 }
 
 .notice__content__item {
-  margin: 0 1rem 1rem 0;
+  margin: 0;
   padding: 1rem;
   width: 46%;
   background-color: var(--color-primary-varient);
@@ -571,10 +583,159 @@ input[name="tab_item"] {
 }
 
 .footer__info li:hover {
-  border-bottom: 1px solid #fff;
+  text-decoration: underline;
   transition: 0.5s;
 }
 
 .footer__info__item {
   color: var(--color-text);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 5.5rem 2rem 0rem 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  #blackpink {
+    display: block;
+  }
+
+  .blackpink__img {
+    margin-bottom: 3rem;
+    right: -1.6rem;
+    width: 95%;
+    height: 18rem;
+  }
+
+  .blackpink__content {
+    width: 100%;
+  }
+
+  .tab_item {
+    padding: 0.7rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    text-align: center;
+  }
+
+  #jisoo:checked ~ #jisoo_content,
+  #jennie:checked ~ #jennie_content,
+  #rose:checked ~ #rose_content,
+  #risa:checked ~ #risa_content {
+    display: block;
+  }
+
+  .profile__description {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .profile__img {
+    width: 95%;
+  }
+
+  .album__content {
+    flex-wrap: wrap;
+  }
+
+  .album__content__item {
+    width: 50%;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #notice {
+    display: block;
+  }
+
+  .community {
+    margin: 0;
+  }
+
+  .notice__content {
+    gap: 1rem;
+  }
+
+  .notice__content__item {
+    margin: 0;
+    width: 48%;
+  }
+
+  #footer {
+    display: block;
+    padding: 2rem;
+  }
+
+  .footer__left {
+    display: block;
+  }
+
+  .footer__right {
+    text-align: left;
+  }
+
+  .footer__right select {
+    margin: 1rem 0;
+  }
+
+  .footer__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__info li {
+    padding: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 5.5rem 1rem 0rem 1rem;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .blackpink__img {
+    height: 14rem;
+  }
+
+  .profile__title {
+    font-size: 2.3rem;
+  }
+
+  .album__content__item {
+    width: 100%;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .notice__content__item {
+    width: 100%;
+  }
+
+  .footer__info {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
