@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Sans KR", sans-serif;
 }
