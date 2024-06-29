@@ -79,7 +79,7 @@ button:hover::after {
 }
 
 .header--dark {
-  background-color: rgb(0 0 0 / 80%);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .header__logo {
@@ -190,7 +190,6 @@ button:hover::after {
     #fd1d1d
   );
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-decoration-break: clone;
   clip-path: inset(1px);
@@ -620,7 +619,7 @@ input[name="tab_item"] {
   .header {
     flex-direction: column;
     align-items: start;
-    background-color: rgb(0 0 0 / 80%);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .header__toggle {
